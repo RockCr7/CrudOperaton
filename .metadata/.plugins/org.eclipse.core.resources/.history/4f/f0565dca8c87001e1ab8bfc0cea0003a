@@ -1,0 +1,18 @@
+package com.lcwd.DocPat.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lcwd.DocPat.entities.Doctor;
+import com.lcwd.DocPat.repository.DoctorRepository;
+
+@Service
+public class DocServiceImpl {
+
+	@Autowired
+	private DoctorRepository docRepo;
+
+	public Doctor createDoc(Doctor doc) {
+		return docRepo.save(doc);
+	}
+}

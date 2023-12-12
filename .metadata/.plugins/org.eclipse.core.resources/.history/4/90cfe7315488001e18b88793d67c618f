@@ -1,0 +1,10 @@
+package com.lcwd.hospitalService.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.lcwd.hospitalService.entity.Hospital;
+
+public interface HospitalRepository extends JpaRepository<Hospital, Long>{
+	
+	Hospital findBydoc_id(long id);
+}

@@ -1,0 +1,5 @@
+package com.lcwd.DocPat.controller;
+
+public class DoctorController {
+
+}

@@ -1,0 +1,20 @@
+package com.lcwd.hospitalService.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.lcwd.hospitalService.repository.HospitalRepository;
+
+@RestController
+@RequestMapping("/hospital")
+public class HospitalController {
+
+	@Autowired
+	HospitalRepository hosRepo;
+
+//	@GetMapping("/findByDoc/{id}")
+//	public List<Hospital> getHosByDocId(long id) {
+//		return hosRepo.findBydoc_id(id);
+//	}
+}

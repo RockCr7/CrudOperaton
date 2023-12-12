@@ -1,0 +1,5 @@
+package com.lcwd.DocPat.repository;
+
+public interface RoleRepository {
+
+}

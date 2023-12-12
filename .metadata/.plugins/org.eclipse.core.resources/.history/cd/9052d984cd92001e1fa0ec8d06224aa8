@@ -1,0 +1,21 @@
+package com.lcwd.DocPat.entities;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+
+@Entity
+public class User {
+
+	private int id;
+	private String username;
+	private String password;
+
+	@ManyToMany
+	@JoinTable(name="user_role",joinColumns =@JoinColumn(name="user",referencedColumnName = "id"),inverseJoinColumns = @JoinColumn(name="role",referencedColumnName = "id"))
+	Set<Role> setOfRole=new HashSet<>();
+}

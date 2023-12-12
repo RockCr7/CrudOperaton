@@ -1,0 +1,69 @@
+package com.lcwd.DocPat.utils;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.lcwd.DocPat.entities.Patient;
+
+public class DoctorDto {
+	private long id;
+
+	private String name;
+
+	private String specialization;
+
+	private String mobile;
+
+	private Hospital hos;
+
+	List<Patient> list = new ArrayList<>();
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSpecialization() {
+		return specialization;
+	}
+
+	public void setSpecialization(String specialization) {
+		this.specialization = specialization;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	public Hospital getHos() {
+		return hos;
+	}
+
+	public void setHos(Hospital hos) {
+		this.hos = hos;
+	}
+
+	public List<Patient> getList() {
+		return list;
+	}
+
+	public void setList(List<Patient> list) {
+		this.list = list;
+	}
+
+}

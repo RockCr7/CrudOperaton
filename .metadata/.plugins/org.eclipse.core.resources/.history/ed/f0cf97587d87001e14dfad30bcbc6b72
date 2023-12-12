@@ -1,0 +1,69 @@
+package com.lcwd.DocPat.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Table(name = "patient")
+public class Patient {
+
+	private long id;
+
+	private String name;
+
+	private String mobile;
+
+	private String email;
+
+	public Patient() {
+
+	}
+
+	public Patient(long id, String name, String mobile, String email) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.mobile = mobile;
+		this.email = email;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+}

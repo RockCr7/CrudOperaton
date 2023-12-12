@@ -1,0 +1,4 @@
+server.port=8888
+spring.application.name= Config-server
+spring.cloud.config.server.git.uri= https://github.com/RockCr7/Congiuration-Ranga
+spring.cloud.config.server.git.clone-on-start=true

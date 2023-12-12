@@ -1,0 +1,13 @@
+package com.lcwd.DocPat.utils;
+
+public class Hospital {
+
+	private long id;
+
+	private long Doc;
+
+	private String name;
+
+	private String city;
+
+}
